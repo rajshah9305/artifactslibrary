@@ -14,6 +14,8 @@ A general-purpose Node.js application using Express.js.
 8. [Available Scripts](#available-scripts)
 9. [Authentication](#authentication)
 10. [Examples](#examples)
+11. [Contributing](#contributing)
+12. [Screenshots](#screenshots)
 
 ## Project Overview
 
@@ -126,6 +128,22 @@ token=$(curl -X POST -H "Content-Type: application/json" -d '{"userId":1,"role":
 # Access protected route
 curl -X GET -H "Authorization: Bearer $token" http://localhost:3000/protected
 ```
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
+
+### Contributors
+
+Special thanks to all contributors:
+
+- [rajshah9305](https://github.com/rajshah9305)
 
 ## Additional Information
 
