@@ -1,0 +1,48 @@
+{
+  "app": {
+    "name": "MyApplication",
+    "version": "1.0.0",
+    "environment": "development"
+  },
+  "server": {
+    "port": 3000,
+    "host": "localhost",
+    "timeout": 30000
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "mydatabase",
+    "user": "dbuser",
+    "password": "",
+    "pool": {
+      "min": 2,
+      "max": 10
+    }
+  },
+  "logging": {
+    "level": "info",
+    "format": "json",
+    "directory": "logs"
+  },
+  "security": {
+    "jwtSecret": "",
+    "jwtExpiresIn": "1d",
+    "bcryptRounds": 10,
+    "corsOrigins": ["http://localhost:3000"]
+  },
+  "cache": {
+    "enabled": true,
+    "ttl": 3600
+  },
+  "api": {
+    "rateLimiting": {
+      "enabled": true,
+      "maxRequests": 100,
+      "timeWindow": 60000
+    },
+    "endpoints": {
+      "baseUrl": "/api/v1"
+    }
+  }
+}
